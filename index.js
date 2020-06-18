@@ -94,7 +94,16 @@ console.log(addOpinion(reviews, "Amin", 5, "Great place!"))
 
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
-
+*/
+function newFeedback(array, name, feedback) {
+  for (let i = 0; i < array.length; i++){
+    if (array[i].name === "Reyna") {
+      array[i].feedback = feedback;
+    }
+  }
+}
+newFeedback(reviews, "Reyna", "Love this place!!")
+console.log(reviews);
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
  Your function should take two arguments:
